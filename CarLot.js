@@ -1,24 +1,22 @@
-"use script"
+"use strict"
 
-let CarLot = (function (originalCarLot) {
-  
-  originalCarLot.getIntentory = function () {
-    let intentory = [];
-    intentory = JSON.parse(this.responseText);
+let CarLot = (function () {
+  let inventory = [];
 
-    originalCarLot.inventoryToDom(inventory.cars);
-  },
-      	
-  // make a request to call the JSON file
-    originalCarLot.loadInventory = function (callback) {
-      let inventoryLoader = new XMLHttpRequest ();
+  return {
+   getInventory: function () {
 
-      inventoryLoader.addEventListener("load", callback);
+   },
+    loadInventory: function (callback) {
+      let inventoryLoader = new XMLHttpRequest();
       inventoryLoader.open("GET", "inventory.json");
       inventoryLoader.send();
-    };
-      	// Invoke the callback function so the caller knows
-      	callback(inventory);
-    return originalCarLot
+      inventoryLoader.addEventListener("load", function () {
+        inventory = JSON.parse(this.responseText).cars;
+        // Invoke the callback function so the caller knows
+        callback(inventory);
+      })
+    }
+  }
 
 })();

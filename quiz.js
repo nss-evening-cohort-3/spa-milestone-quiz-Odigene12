@@ -1,21 +1,18 @@
 "use strict"
-let CarLot = (function (originalCarLot) {
-	let container = document.getElementById("container");
-	let vehicles = cars[i];
-function populatePage (originalCarLot) {
-  // Loop over the inventory and populate the page
-  	for(var i = 0; i < cars.length; i++) {
-originalCarLot.carstoDOM = function (vehicles) {
-  		container.innerHTML += `<h1 class = "type">${vehicles.make} ${vehicles.model}</h1><section><p>${vehicles.year} ${vehicles.price}</p><footer>${vehicles.purchased} ${vehicles.description}</footer>`
-  	};
- }
 
-  	// build each car card
-  	
+function populatePage (inventory) {
+ let carCard = document.getElementById("card");
+ let outputString = "";
+ // Loop over the inventory and populate the page
+  	for(var i = 0; i < inventory.length; i++) {
+  		let currentCar = inventory[i];
+  		outputString += `<h1>${currentCar.make}${currentCar.model}${currentCar.year}</h1><h2>${currentCar.price}${currentCar.color}</h2><p>${currentCar.purchased}${currentCar.description}</p>`
+  	}
+
   // Now that the DOM is loaded, establish all the event listeners needed
-  CarLot.activateEvents();
-	}
+  // CarLot.activateEvents();
 }
+
 // Load the inventory and send a callback function to be
 // invoked after the process is complete
-CarLot.loadInventory();
+CarLot.loadInventory(CarLot.populatePage);
