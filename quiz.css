@@ -1,7 +1,55 @@
-.card {
-	width: 70%;
+.car0 {
+	width: 50%;
 	height: 375px;
 	padding: 20px;
 	display: block;
 	float: left;
+	border: 1px solid royalblue; 
+	background-color: silver;
+}
+.car1 {
+	width: 50%;
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid teal;
+	background-color: pink; 
+}
+
+.car2 {
+	width: 50%;
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid limegreen; 
+	background-color: magenta;
+}
+
+.car3 {
+	width: 50%;
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid crimson; 
+	background-color: gold;
+}
+
+
+.firstbackground {
+	background-color: cyan;
+}
+
+.secondbackground {
+	background-color: yellow;
+}
+
+.thirdbackground {
+	background-color: khaki;
+}
+
+.fourthbackground {
+	background-color: salmon;
 }
