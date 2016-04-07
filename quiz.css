@@ -53,3 +53,19 @@
 .fourthbackground {
 	background-color: salmon;
 }
+
+.firstwidth {
+	border-width: 10px;
+}
+
+.secondwidth {
+	border-width: 10px;
+}
+
+.thirdwidth {
+	border-width: 10px;
+}
+
+.fourthwidth{
+	border-width: 10px;
+}
