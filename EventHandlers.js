@@ -1,13 +1,13 @@
 "use strict"
 
 var CarLot = ( function (originalCarLot) {
-let newBio = "";
 let firstCar = document.getElementById("car0");	
 let secondCar = document.getElementById("car1");	
 let thirdCar = document.getElementById("car2");	
 let fourthCar = document.getElementById("car3");	
 let cars = document.getElementsByClassName("car");
 let input = document.getElementById("userInput");
+let carBio = document.getElementsByClassName("description");
 
 function activateEvents (inventory) {		
 
@@ -16,23 +16,45 @@ for(var i = 0; i < cars.length; i++) {
 	originalCarLot.colorChange(event);
 	originalCarLot.borderChange(event);
 	originalCarLot.clearValue(event);
-	changeBio();
+	originalCarLot.changeBio();
 		});
 	}
 };
 
 
-		function changeBio (inventory) {
-		input.addEventListener("keyup", function(event){
-		let newInput = input.value
-		let newBio = 
-			})
+		originalCarLot.changeBio = function () {
+				let theseCars = document.getElementsByClassName("car");
+				let carBio = document.getElementsByClassName("description");
+				for (let i = 0; i < cars.length; i++) {
+					let newCar = theseCars[i];
+					let newDesc = carBio[i];
+			input.addEventListener("keyup", function(event) {
+				if (theseCars.classList.contains("selected")) {
+					let userWrite = event.currentTarget.value;
+					newDesc.innerHTML = userWrite;
+				}
+			})	
+		}
+	}	
+		originalCarLot.removeSelection = function () {
+			let theseCars = document.getElementsByClassName("car");
+			for (let i = 0; i < cars.length; i++) {
+				cars[i].classList.remove("selected")
+			}
 		}
 
 
+
+
 	originalCarLot.clearValue = function(event){
-		input.value= "";
-		input.focus();
+		for (let i = 0; i < cars.length; i++){
+			CarLot.removeSelection();
+			let thisCar = cars[i];
+			let thisDesc = carBio[i];
+			thisCar.classList.add("selected");
+			input.value= "";
+			input.focus();
+		}
 	}	
 		
 	

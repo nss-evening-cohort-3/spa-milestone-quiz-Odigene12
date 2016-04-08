@@ -69,3 +69,7 @@
 .fourthwidth{
 	border-width: 10px;
 }
+
+.selected {
+	border-style: dotted;
+}
