@@ -15,8 +15,6 @@ function activateEvents (inventory) {
 
 for(var i = 0; i < cars.length; i++) {
 	cars[i].addEventListener("click", function (event) {
-	originalCarLot.colorChange(event);
-	originalCarLot.borderChange(event);
 	originalCarLot.changeBio();
 	
 		});
@@ -31,9 +29,7 @@ for(var i = 0; i < cars.length; i++) {
 			let thisBio = carBio[i];
 			thisCar.addEventListener("click", function() {
 				CarLot.removeSelection();
-				thisCar.classList.add("selected")
-				input.value = "";
-				input.focus();	
+				thisCar.classList.add("selected")	
 				chosenCar = thisCar;
 				chosenBio = thisBio;						
 				
@@ -60,37 +56,6 @@ for(var i = 0; i < cars.length; i++) {
 				}
 			})
 		}
-
-	
-	originalCarLot.colorChange = function(event) {
-		if(event.target.parentNode.id === firstCar.id || event.target.id === firstCar.id ){
-		firstCar.classList.toggle("firstbackground")
-	}
-		else if(event.target.parentNode.id === secondCar.id || event.target.id === secondCar.id){
-			secondCar.classList.toggle("secondbackground")
-		}
-			else if (event.target.parentNode.id === thirdCar.id || event.target.id === thirdCar.id) {
-				thirdCar.classList.toggle("thirdbackground")
-			}
-				else if (event.target.parentNode.id === fourthCar.id || event.target.id === fourthCar.id) {
-					fourthCar.classList.toggle("fourthbackground")
-				};
-			};
-
-	originalCarLot.borderChange = function(event) {
-		if(event.target.parentNode.id === firstCar.id || event.target.id === firstCar.id ){
-		firstCar.classList.toggle("firstwidth")
-	}
-		else if(event.target.parentNode.id === secondCar.id || event.target.id === secondCar.id){
-			secondCar.classList.toggle("secondwidth")
-		}
-			else if (event.target.parentNode.id === thirdCar.id || event.target.id === thirdCar.id) {
-				thirdCar.classList.toggle("thirdwidth")
-			}
-				else if (event.target.parentNode.id === fourthCar.id || event.target.id === fourthCar.id) {
-					fourthCar.classList.toggle("fourthwidth")
-				};
-			};
 
 CarLot.loadInventory(activateEvents);
 

@@ -1,5 +1,5 @@
 .car0 {
-	width: 50%;
+	
 	height: 375px;
 	padding: 20px;
 	display: block;
@@ -8,7 +8,7 @@
 	background-color: silver;
 }
 .car1 {
-	width: 50%;
+	
 	height: 375px;
 	padding: 20px;
 	display: block;
@@ -18,7 +18,7 @@
 }
 
 .car2 {
-	width: 50%;
+	
 	height: 375px;
 	padding: 20px;
 	display: block;
@@ -28,7 +28,7 @@
 }
 
 .car3 {
-	width: 50%;
+
 	height: 375px;
 	padding: 20px;
 	display: block;
@@ -38,38 +38,23 @@
 }
 
 
-.firstbackground {
+.Cyan {
 	background-color: cyan;
+	border-width: 10px;
 }
 
-.secondbackground {
+.Yellow {
 	background-color: yellow;
+	border-width: 10px;
 }
 
-.thirdbackground {
+.Khaki {
 	background-color: khaki;
+	border-width: 10px;
 }
 
-.fourthbackground {
+.Salmon {
 	background-color: salmon;
-}
-
-.firstwidth {
 	border-width: 10px;
 }
 
-.secondwidth {
-	border-width: 10px;
-}
-
-.thirdwidth {
-	border-width: 10px;
-}
-
-.fourthwidth{
-	border-width: 10px;
-}
-
-.selected {
-	border-style: dotted;
-}

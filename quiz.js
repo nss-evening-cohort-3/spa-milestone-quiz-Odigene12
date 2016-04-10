@@ -9,9 +9,10 @@ function populatePage (inventory) {
  // Loop over the inventory and populate the page
   	for(var i = 0; i < inventory.length; i++) {
   		let currentCar = inventory[i];
-  		let newCars = document.getElementById(`car${i}`)
-  		outputString = `<h1>${currentCar.make} ${currentCar.model} ${currentCar.year}</h1><h2>${currentCar.price}</h2><h3>${currentCar.color}</h3><h4>${currentCar.purchased}</h4><p class= "bio">${currentCar.description}</p>`
-  	newCars.innerHTML = outputString; 
+  		let newCars = document.getElementById("cards")
+  		outputString = `<div class= "car${i} car col-xs-4"><h1>${currentCar.make} ${currentCar.model} ${currentCar.year}</h1><h2>${currentCar.price}</h2><h3>${currentCar.color}</h3><h4>${currentCar.purchased}</h4><p class= "bio">${currentCar.description}</p></div></div>`
+  		console.log(outputString);
+  	newCars.innerHTML += outputString; 
   	}
 
   // Now that the DOM is loaded, establish all the event listeners needed
