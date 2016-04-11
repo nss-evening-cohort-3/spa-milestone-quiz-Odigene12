@@ -1,6 +1,6 @@
 "use strict"
 
-
+// This is the beginning of the iife in which the variables are set at the top. 
 var CarLot = ( function (originalCarLot) {
 let firstCar = document.getElementById("car0");	
 let secondCar = document.getElementById("car1");	
@@ -12,6 +12,7 @@ let carBio = document.getElementsByClassName("description");
 let chosenCar;
 let chosenBio;
 
+// The events are all called in this function.
 function activateEvents (inventory) {		
 
 for(var i = 0; i < cars.length; i++) {
@@ -22,6 +23,8 @@ for(var i = 0; i < cars.length; i++) {
 	}
 	originalCarLot.bindItUp();
 };
+
+	// This function is to go through each car on the dom and attach one of the css classes to them when clicked
 	originalCarLot.changeBio = function() {
 		let demCars = document.getElementsByClassName("car");
 		let carBio = document.getElementsByClassName("bio");
@@ -32,20 +35,21 @@ for(var i = 0; i < cars.length; i++) {
 				CarLot.removeSelection();
 				thisCar.classList.add("selected")	
 				chosenCar = thisCar;
-				chosenBio = thisBio;						
+				chosenBio = thisBio;
+				if (event.target.id === car[i])						
 				
 			})
 		}
 	}
 
-
+	// This function is supposed to remove deselect the car that was previously clicked on when another car is clicked.
 	originalCarLot.removeSelection = function () {
 		let cars = document.getElementsByClassName("car");
 		for(let i = 0; i < cars.length; i++) {
 			cars[i].classList.remove("selected");
 		}
 	}
-		
+		//This function will allow the user to change the description for the selected car 
 	originalCarLot.bindItUp = function() {
 		let demCars = document.getElementsByClassName("car");
 		let carBio = document.getElementsByClassName("bio");
@@ -59,7 +63,7 @@ for(var i = 0; i < cars.length; i++) {
 				}	
 			})
 		}
-
+// The iife is called and immediately loads.
 CarLot.loadInventory(activateEvents);
 
 return originalCarLot;

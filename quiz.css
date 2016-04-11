@@ -1,3 +1,5 @@
+
+/*This is the basic styling for the first car*/
 .car0 {
 	
 	height: 375px;
@@ -7,6 +9,8 @@
 	border: 1px solid royalblue; 
 	background-color: silver;
 }
+
+/*This is the basic styling for the second car*/
 .car1 {
 	
 	height: 375px;
@@ -17,6 +21,7 @@
 	background-color: pink; 
 }
 
+/*This is the basic styling for the third car*/
 .car2 {
 	
 	height: 375px;
@@ -26,6 +31,8 @@
 	border: 1px solid limegreen; 
 	background-color: magenta;
 }
+
+/*This is the basic styling for the third car*/
 
 .car3 {
 
@@ -37,22 +44,25 @@
 	background-color: gold;
 }
 
-
+/*This is the first background and border change for the first car*/
 .Cyan {
 	background-color: cyan;
 	border-width: 10px;
 }
 
+/*This is the first background and border change for the second car*/
 .Yellow {
 	background-color: yellow;
 	border-width: 10px;
 }
 
+/*This is the first background and border change for the third car*/
 .Khaki {
 	background-color: khaki;
 	border-width: 10px;
 }
 
+/*This is the first background and border change for the fourth car*/
 .Salmon {
 	background-color: salmon;
 	border-width: 10px;

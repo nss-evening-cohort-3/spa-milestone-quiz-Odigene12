@@ -1,8 +1,9 @@
 "use strict"
 
+// This is the beginning of the iife to populate the dom with the cards.
 var CarLot = (function (originalCarLot) {
 
-
+// This is the function that loops through the inventory, builds the string and bootstrap for each car and populates the dom with that information.
 function populatePage (inventory) {
  let carCard = document.getElementById("card");
  let outputString = "";
