@@ -1,8 +1,9 @@
 "use strict"
-let id = 0;
+
 var CarLot = (function () {
   let inventory = [];
-
+  let id = 4;
+  
   return {
    getInventory: function () {
 

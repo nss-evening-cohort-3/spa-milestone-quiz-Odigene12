@@ -1,5 +1,6 @@
 "use strict"
 
+
 var CarLot = ( function (originalCarLot) {
 let firstCar = document.getElementById("car0");	
 let secondCar = document.getElementById("car1");	
@@ -46,14 +47,16 @@ for(var i = 0; i < cars.length; i++) {
 	}
 		
 	originalCarLot.bindItUp = function() {
-		let theseCars = document.getElementsByClassName("car");
-		let theseBios = document.getElementsByClassName("description");
+		let demCars = document.getElementsByClassName("car");
+		let carBio = document.getElementsByClassName("bio");
 			input.addEventListener("keypress", function(event) {
-				console.log(chosenCar);
-				if (chosenCar.classList.contains("selected")) {
-					let userDescription = event.currentTarget.value;
-					chosenBio.innerHTML = userDescription;
-				}
+				for(let i = 0; i < cars.length; i++){
+				let thisCar = demCars[i];
+				let thisBio = carBio[i];
+					chosenCar = thisCar;
+					chosenBio = thisBio;
+					console.log(chosenCar);
+				}	
 			})
 		}
 
