@@ -12,16 +12,15 @@ let chosenBio;
 // The events are all called in this function.
 function activateEvents (inventory) {		
 for(var i = 0; i < cars.length; i++) {
+	cars[i].addEventListener("click", function (event) {	
 		let chosenBio = carBio[i]
 		let chosenCar = cars[i];
-	cars[i].addEventListener("click", function (event) {	
 	originalCarLot.removeSelection("colorBack", "borderBack")	
 	originalCarLot.colorChange(event.currentTarget, "colorBack");
 	originalCarLot.borderChange(event.currentTarget, "borderBack");
-	originalCarLot.bindItUp();
-		});
+			});
 	}
-	
+	originalCarLot.bindItUp();
 };
 
 
@@ -33,8 +32,8 @@ for(var i = 0; i < cars.length; i++) {
 	}
 		//This function will allow the user to change the description for the selected car 
 	originalCarLot.bindItUp = function() {
-			input.addEventListener("keypress", function(event) {
-				
+			input.addEventListener("keypress", function(event){
+				chosenBio.innerHTML = input.value
 			})
 		}
 // The iife is called and immediately loads.
