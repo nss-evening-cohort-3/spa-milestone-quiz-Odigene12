@@ -13,6 +13,8 @@ let chosenBio;
 function activateEvents (inventory) {		
 for(var i = 0; i < cars.length; i++) {
 	cars[i].addEventListener("click", function (event) {	
+		 console.log(cars );
+		 console.log(carBio);
 		 chosenBio = carBio[i]
 		 chosenCar = cars[i];
 	originalCarLot.removeSelection("colorBack", "borderBack")	
