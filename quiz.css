@@ -45,26 +45,12 @@
 }
 
 /*This is the first background and border change for the first car*/
-.Cyan {
+.colorBack {
 	background-color: cyan;
-	border-width: 10px;
+	
 }
 
-/*This is the first background and border change for the second car*/
-.Yellow {
-	background-color: yellow;
-	border-width: 10px;
-}
-
-/*This is the first background and border change for the third car*/
-.Khaki {
-	background-color: khaki;
-	border-width: 10px;
-}
-
-/*This is the first background and border change for the fourth car*/
-.Salmon {
-	background-color: salmon;
+.borderBack {
 	border-width: 10px;
 }
 
