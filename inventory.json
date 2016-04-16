@@ -6,7 +6,6 @@
       "year": "2007",
       "price": "$9000",
       "color": "RoyalBlue",
-      "id": 0,
       "purchased": false,
       "description": "This is an immaculate 2007 Nissan Sentra with only 30000 miles on it. Leather seats, power everything."
     },
@@ -16,7 +15,6 @@
       "year": "2012",
       "price": "$10000",
       "color": "Teal",
-      "id": 1,
       "purchased": false,
       "description": "This is a newer model 2012 Honda Civic with only 25000 miles on it. Decked out in the finest specs."
       },
@@ -26,7 +24,6 @@
       "year": "2016",
       "price": "$50000",
       "color": "LimeGreen",
-      "id": 2,
       "purchased": false,
       "description": "Our prized viper is the newest model out that goes from 0 to 60 in half of a second and will outrun any police car."
       },
