@@ -1,0 +1,56 @@
+
+/*This is the basic styling for the first car*/
+.car0 {
+	
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid royalblue; 
+	background-color: silver;
+}
+
+/*This is the basic styling for the second car*/
+.car1 {
+	
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid teal;
+	background-color: pink; 
+}
+
+/*This is the basic styling for the third car*/
+.car2 {
+	
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid limegreen; 
+	background-color: magenta;
+}
+
+/*This is the basic styling for the third car*/
+
+.car3 {
+
+	height: 375px;
+	padding: 20px;
+	display: block;
+	float: left;
+	border: 1px solid crimson; 
+	background-color: gold;
+}
+
+/*This is the first background and border change for the first car*/
+.colorBack {
+	background-color: cyan;
+	
+}
+
+.borderBack {
+	border-width: 10px;
+}
+

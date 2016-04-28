@@ -1,0 +1,41 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Sentra",
+      "year": "2007",
+      "price": "$9000",
+      "color": "RoyalBlue",
+      "purchased": false,
+      "description": "This is an immaculate 2007 Nissan Sentra with only 30000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "year": "2012",
+      "price": "$10000",
+      "color": "Teal",
+      "purchased": false,
+      "description": "This is a newer model 2012 Honda Civic with only 25000 miles on it. Decked out in the finest specs."
+      },
+      {
+        "make": "Dodge",
+      "model": "Viper",
+      "year": "2016",
+      "price": "$50000",
+      "color": "LimeGreen",
+      "purchased": false,
+      "description": "Our prized viper is the newest model out that goes from 0 to 60 in half of a second and will outrun any police car."
+      },
+      {
+        "make": "Hennessey",
+      "model": "Venom GT",
+      "year": "2016",
+      "price": "$1.4 Million",
+      "color": "Crimson",
+      "id": 3,
+      "purchased": false,
+      "description": "The fastest car in the world!! The Venom GT was recorded as exceeding 270.49 mph."
+      }
+  ]
+}
